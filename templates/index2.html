@@ -1,0 +1,19 @@
+{% extends "dark_template.html" %}
+
+{% block title %} Prime numbers are: {% endblock %}
+
+{% block content %}
+
+    {% for chestie in chestii %}
+<p>
+    <a href="{{ url_for('treburi', x=loop.index) }}">{{ loop.index }} - index</a
+    ><br />
+    <a href="{{ url_for('treburi', x=loop.index0) }}"
+        >{{ loop.index0 }} - index0</a
+    >
+</p>
+    {% endfor %}
+
+{% endblock %}
+
+{% block george %} salut! {% endblock %}

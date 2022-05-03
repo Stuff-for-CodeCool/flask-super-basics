@@ -1,0 +1,7 @@
+{% extends "dark_template.html" %} {% block content %}
+<form action="{{ url_for('process_form') }}" method="POST">
+    <label for="numele" class="form-label">Cum te cheama?</label>
+    <input type="text" id="numele" name="nume" class="form-control" />
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}
